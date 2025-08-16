@@ -1,0 +1,90 @@
+form {
+  border: 1px solid #ccc;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fdf4e3;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor del formulario */
+.container {
+  padding: 20px;
+}
+
+/* Encabezado del formulario */
+.container h1 {
+  text-align: center;
+  color: #8b4513;
+  margin-bottom: 10px;
+}
+
+.container p {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Inputs del formulario */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Checkbox */
+input[type=checkbox] {
+  margin-right: 10px;
+}
+
+/* Botones */
+button.signupbtn, button.cancelbtn {
+  background-color: #8b4513;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 4px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 45%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button.signupbtn:hover, button.cancelbtn:hover {
+  background-color: #a0522d;
+}
+
+/* Área de botones alineada */
+.clearfix {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Link dentro del texto */
+a {
+  color: #8b4513;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .clearfix {
+    flex-direction: column;
+  }
+
+  button.signupbtn, button.cancelbtn {
+    width: 100%;
+    margin: 8px 0;
+  }
+}

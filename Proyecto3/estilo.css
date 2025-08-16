@@ -1,0 +1,542 @@
+/* RESET Y ESTILO GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fffaf0;
+    color: #2c2c2c;
+    line-height: 1.6;
+    background-image: url("imagens/fondo.png");
+    
+}
+
+.texto{
+    height: 70vh;
+}
+
+.slider-container {
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 300px;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(10 * 300px); /* 10 imágenes * 300px */
+  animation: scrollSlider 30s linear infinite;
+}
+
+.slider-track img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes scrollSlider {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-1500px); } /* 5 imágenes * 300px */
+}
+
+/* ENCABEZADO */
+header {
+    background-color:  #663a22;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/*local*/
+.local{
+    height: 120vh;
+}
+.local img{
+    width: 100%;
+    height: 120vh;
+}
+
+/* Logo (izquierda) */
+.titulo_restaurante {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo_restaurante img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #aaa;
+    background-color: #ccc;
+    padding: 5px;
+}
+
+.titulo_restaurante p {
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Menú (derecha) */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: #663a22;
+    
+}
+
+.item {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.item:hover {
+    background-color: rgba(255, 255, 255, 0.551);
+    border: 1px solid #ffffff6f;
+    border-radius: 4px;
+}
+
+.logo-final {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 400px;
+}
+
+.logo-final img {
+    width: 200px;
+    height: 125px;
+    object-fit: cover;
+    border: 2px solid white;
+    
+}
+
+.logo-final p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+.btn-auth {
+  background-color: #8b4513;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Segoe UI', sans-serif;
+  border: 1px solid transparent;
+}
+
+.btn-auth:hover {
+  background-color: #a0522d;
+  border-color: white;
+}
+
+
+
+/* INTRODUCCIÓN */
+.introduccion {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.introduccion h2 {
+    font-size: 28px;
+    color: #6b3e26;
+    margin-bottom: 20px;
+}
+
+
+/* ESLOGAN */
+.eslogan, .introduccion, .horario {
+    display: inline-block;
+    vertical-align:bottom;
+
+}
+
+/* Ajusta .eslogan */
+.eslogan {
+    text-align: center;
+    float: left;
+    width: auto;
+    height:200%;
+    border-radius: 8px;
+    background-color: #f4e6d9;
+    padding: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #8b4513;
+    
+    width: 20%;
+}
+
+/* Ajusta .introduccion */
+.introduccion {
+    padding: 60px 20px;
+    width: 55%;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Ajusta .horario */
+.horario {
+    float: right;
+    background-color: #fefae0;
+    width: 25%;
+    border-radius: 8px ;
+    padding: 50px 10px;
+    text-align: center;
+    margin-top: 0;
+    height: 340px;
+}
+
+
+.horario h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.horario p {
+    font-size: 16px;
+    color: #5c3b2e;
+}
+
+/* FORMULARIO */
+.formulario {
+    background-color: #fffdf4;
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #4b2e2e;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: #fefefe;
+}
+
+.formulario button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #a0522d;
+}
+
+main{
+    padding: 30px;
+    max-width: 80%;
+    margin: auto;
+    background-color: #fff; /* fondo de la info*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  
+}
+
+.menu-items article:hover {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+   background-color: rgba(187, 114, 18, 0.432);
+}
+
+.espacio{
+    height: 15vh;
+}
+
+.espacio_reserva{
+    height: 8vh;
+}
+
+.btn{
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    
+}
+
+.btn  a{
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
+.btn:hover{
+    background-color: #a0522d;
+}
+
+.boton_reserva{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reserva-carrito-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#carrito {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px;
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#carrito h2 {
+    font-size: 18px;
+    color: #8b4513;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+#cart-items li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#cart-items button {
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#cart-items button:hover {
+    background-color: #8b4513;
+}
+
+#carrito p {
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.contacto {
+    display: flex;
+    padding: 5,5,5,5;
+
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    background-color: #fffdf4;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.izquierda {
+    flex: 1 1 55%;
+    
+}
+
+.contacto section {
+    margin-bottom: 30px;
+}
+
+.contacto h2 {
+    font-size: 24px;
+    color: #6b3e26;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+}
+
+.contacto p {
+    font-size: 16px;
+    color: #5c3b2e;
+    margin-bottom: 8px;
+    font-family: 'Georgia', serif;
+}
+
+.contacto form label {
+    font-weight: bold;
+    color: #4b2e2e;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    background-color: #fffaf0;
+    font-size: 16px;
+}
+
+.contacto input[type="submit"] {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Georgia', serif;
+}
+
+.contacto input[type="submit"]:hover {
+    background-color: #a0522d;
+}
+
+.contacto iframe {
+    border: none;
+    height: 100%;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1 1 40%;
+}
+
+
+footer{
+    margin: 0px;
+    color: white;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    background-color: #663a22e9;
+    border: 10px black;
+    justify-content: space-around;
+}
+
+.logo_footer img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ubicacion_footer{
+    text-align: left;
+    padding-right: 150px;
+    justify-content: left;
+
+}
+.map_footer{
+    justify-content: right;
+    padding-left: 150px;
+}
+.slogan_footer{
+    color: white;
+    background-color: #a0512df5;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    
+}
+
+

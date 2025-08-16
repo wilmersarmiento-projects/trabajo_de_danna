@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservaciones</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <a class="item" href="parrilla.html">INICIO</h3>
+                <a class="item" href="reservaciones.html">RESERVACIONES</a>
+                <a class="item" href="menu.html">MENU</a>
+                <a class="item" href="contacto.html">CONTACTANOS</a>
+                <a class="item" id="estadisticasboton" href="estadisticas.html">ESTADISTICAS</a>
+                <a class="btn-auth" href="login (1).html">Sign In</a>
+                <a class="btn-auth" href="login (1).html" >Register Now</a>
+                <div class="logo-final">
+                    <img src="imagens/parrilla.jpg" alt="parrilla logo">
+                   
+                </div>
+            </div>
+        </nav>
+    </header>   
+
+    <div class="formulario" id="reservaciones">
+        <form action="/enviar_datos" method="get">
+            <div class="formulario_nombres">
+                <label for="name">nombre</label>
+                <input type="text" id="name" name="name" placeholder="Escriba su nombre">
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="correo electronico">
+            </div>
+            <div class="mesa">
+                <label for="mesa">mesa</label>
+                <select name="mesa" id="mesa">
+                    <option value="mesa 1">mesa 1</option>
+                    <option value="mesa 2">mesa 2</option>
+                    <option value="mesa 3">mesa 3</option>
+                    <option value="mesa 4">mesa 4</option>
+                    <option value="mesa 5">mesa 5</option>
+                </select>
+                <label for="date">fecha</label>
+                <input type="date" id="date" name="date" placeholder="dia/mes/año">
+                <label for="servicio">servicio</label>
+                <select name="servicio" id="servicio">
+                    <option value="tarde">12:30-1:30 pm</option>
+                    <option value="tarde">1:30-2:30 pm</option>
+                    <option value="tarde">2:30-3:30 pm</option>
+                    <option value="noche">6:00-7:00 pm</option>
+                    <option value="noche">7:00-8:00 pm</option>
+                    <option value="noche">8:00-9:00 pm</option>
+                </select>
+            </div>
+            <div class="comentarios">
+                    <label for="mensaje">Comentarios/sugerencias/alergias</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </form>
+    </div>
+    <div class="espacio_reserva">
+    </div>
+
+</body>
+            <footer class="container_footer">
+            <div class="logo_footer">
+                <img src="imagens/parrilla.jpg" alt="parrilla_footer" >
+            </div>
+            <div class="ubicacion_footer">
+                <p> Calle 123 #45-67, Bucaramanga, Colombia</p>
+                <p> Teléfono: +57 300 123 4567</p>
+                <p> Email: contacto@parrilla.com</p>
+            </div>
+            <div class="map_footer">
+                <h2>Ubicación en el mapa</h2>
+                <iframe src="https://www.google.com/maps?q=Bucaramanga,+Colombia&output=embed" width="100%"></iframe>
+            </div>
+        </footer>
+        <div class="slogan_footer">
+            <p> &copy;2025 Parrilla todo al carbon</p>
+        </div>
+</html>
