@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Menu</title>
+    <link href="estilo.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <a class="item" href="parrilla.html">INICIO</a>
+                <a class="item" href="reservaciones.html">RESERVACIONES</a>
+                <a class="item" href="menu.html">MENU</a>
+                <a class="item" href="contacto.html">CONTACTANOS</a>
+                <a class="item" id="estadisticasboton" href="estadisticas.html">ESTADISTICAS</a>
+                <a class="btn-auth" href="login (1).html">Sign In</a>
+                <a class="btn-auth" href="login (1).html" >Register Now</a>
+                <div class="logo-final">
+                <img alt="parrilla logo" src="imagens/parrilla.jpg"/>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+        <h2>Menú</h2>
+        <div class="menu-items">
+        <article>
+            <h3>Empanadas criollas</h3>
+            <p>Carne de res picada o molida, cebolla, pimiento rojo, huevo cocido</p>
+            <img alt="Empanadas criollas" height="165" src="imagens/menu/empacrio.jpg" width="250"/>
+            <p class="price">$10</p><button class="add-to-cart" data-name="Empanadas criollas" data-price="10">Agregar al carrito</button></article>
+        <article>
+            <h3>Provoleta a la parrilla</h3>
+            <p>Queso provolone, orégano, ají molido, acompañada con tomate seco o chimichurri</p>
+            <img alt="Provoleta a la parrilla" height="165" src="imagens/menu/provolet.jpg" width="250"/>
+            <p class="price">$10</p><button class="add-to-cart" data-name="Provoleta a la parrilla" data-price="10">Agregar al carrito</button></article>
+        <article>
+            <h3>Chorizo artesanal</h3>
+            <p>Carne de cerdo o de res, ajo, pimentón, tripa</p>
+            <img alt="Chorizo artesanal" height="165" src="imagens/menu/chorizo.jpg" width="250"/>
+            <p class="price">$10</p><button class="add-to-cart" data-name="Chorizo artesanal" data-price="10">Agregar al carrito</button></article>
+        <article>
+            <h3>Asado de tira</h3>
+            <p>Costillas de res cortadas en tiras cocido lentamente a la parrilla o al asador</p>
+            <img alt="Asado de tira" src="imagens/menu/asadotira.jpg" width="250"/>
+            <p class="price">$10</p><button class="add-to-cart" data-name="Asado de tira" data-price="10">Agregar al carrito</button></article>
+        <article>
+            <h3>Bife de chorizo</h3>
+            <p>Corte grueso de lomo de res acompañada con chimichurri o manteca de hierbas.</p>
+            <img alt="Bife de chorizo" height="165" src="imagens/menu/bifechorizo.jpg" width="250"/>
+            <p class="price">$10</p><button class="add-to-cart" data-name="Bife de chorizo" data-price="10">Agregar al carrito</button></article>
+        <article>
+            <h3>Pollo a la parrilla</h3>
+            <p>Pollo entero o en piezas, limón, ajo, orégano, cocido a fuego lento sobre brasas.</p>
+            <img alt="Pollo a la parrilla" height="165" src="imagens/menu/polloparilla.jpg" width="250"/>
+            <p class="price">$10</p><button class="add-to-cart" data-name="Pollo a la parrilla" data-price="10">Agregar al carrito</button></article>
+        <article>
+            <h3>Ensalada mixta</h3>
+            <p>Lechuga, tomate, cebolla, zanahoria rallada (opcional), aceite, vinagre y sal.</p>
+            <img alt="Pollo a la parrilla" height="165" src="imagens/menu/ensalada.jpg" width="255"/>
+            <p class="price">$10</p><button class="add-to-cart" data-name="Ensalada mixta" data-price="10">Agregar al carrito</button></article>
+        <article>
+            <h3>Papas a la provenzal</h3>
+            <p>Papas fritas o al horno, ajo picado, perejil fresco, aceite de oliva o manteca.</p>
+            <img alt="Pollo a la parrilla" height="165" src="imagens/menu/papasprovenzal.jpg" width="250"/>
+            <p class="price">$10</p><button class="add-to-cart" data-name="Papas a la provenzal" data-price="10">Agregar al carrito</button></article>
+        <article>
+            <h3>Vegetales grillados</h3>
+            <p>Berenjena, calabacín, pimientos, champiñones, cebolla, aceite de oliva.</p>
+            <img alt="Pollo a la parrilla" src="imagens/menu/vegetalesgrillados.jpg" width="250"/>
+            <p class="price">$10</p><button class="add-to-cart" data-name="Vegetales grillados" data-price="10">Agregar al carrito</button></article>
+            </div>
+        </section>
+        <div class="reserva-carrito-container">
+            <div class="boton_reserva">
+            <a href="reservaciones.html"><button class="btn">Reservar</button></a>
+            </div>
+
+            <section id="carrito">
+                <h2>Carrito</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="cart-total">0</span></p>
+                <button class="btn" onclick="vaciarCarrito()">Vaciar Carrito</button>
+            </section>
+            </div>
+    </main>  
+        <div>
+        
+
+        </div>
+            <footer class="container_footer">
+                <div class="logo_footer">
+                    <img src="imagens/parrilla.jpg" alt="parrilla_footer" >
+                </div>
+                <div class="ubicacion_footer">
+                    <p> Calle 123 #45-67, Bucaramanga, Colombia</p>
+                    <p> Teléfono: +57 300 123 4567</p>
+                    <p> Email: contacto@parrilla.com</p>
+                </div>
+                <div class="map_footer">
+                    <h2>Ubicación en el mapa</h2>
+                    <iframe src="https://www.google.com/maps?q=Bucaramanga,+Colombia&output=embed" width="100%"></iframe>
+                </div>
+            </footer>
+            <div class="slogan_footer">
+                <p> &copy;2025 Parrilla todo al carbon</p>
+            </div>
+        
+</body>
+
+  <script>
+  let carrito = [];
+
+  function actualizarCarrito() {
+    const lista = document.getElementById("cart-items");
+    const total = document.getElementById("cart-total");
+    lista.innerHTML = "";
+    let suma = 0;
+    carrito.forEach((item, index) => {
+      const li = document.createElement("li");
+      li.textContent = `${item.nombre} - $${item.precio}`;
+      const btn = document.createElement("button");
+      btn.textContent = "Eliminar";
+      btn.onclick = () => {
+        carrito.splice(index, 1);
+        actualizarCarrito();
+      };
+      li.appendChild(btn);
+      lista.appendChild(li);
+      suma += item.precio;
+    });
+    total.textContent = suma;
+  }
+
+  function vaciarCarrito() {
+    carrito = [];
+    actualizarCarrito();
+  }
+
+  document.querySelectorAll(".add-to-cart").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const nombre = btn.getAttribute("data-name");
+      const precio = parseFloat(btn.getAttribute("data-price"));
+      carrito.push({ nombre, precio });
+      actualizarCarrito();
+    });
+  });
+  </script>
+
+
+</html>
